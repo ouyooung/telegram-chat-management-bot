@@ -13,8 +13,6 @@
 - 关键词检测
 - 个人简介检测
 
----
-
 ## 准备工作
 
 ### 一、创建 Telegram Bot
@@ -28,8 +26,6 @@
 5. 获取 **Bot Token**，格式示例：
 123456789:AAxxxxxxxxxxxxxxxxxxxx
 
----
-
 ### 二、将机器人加入群聊
 
 - 把机器人加入需要管理的群聊
@@ -39,8 +35,6 @@
   - 读取消息
 
 ## 部署
-
----
 
 ### 1.创建 Worker
 1.![img_1.png](assets%2Fimages%2Fimg_1.png)
@@ -71,7 +65,6 @@ const WHITE_LIST_ID = new Set([
 
 ## 设置Webhook
 
----
 当一切就绪后，在浏览器中访问：
 https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<WORKER_URL>/webhook
 ![img.png](assets%2Fimages%2Fimg.png)
@@ -86,7 +79,6 @@ https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<WORKER_URL>/webh
 
 ## 其他
 
----
 作者 欧阳([@OuYoung](https://t.me/ouyoung))
 
 如果部署遇到问题，欢迎来群内找人解答 https://t.me/oyDevelopersClub
