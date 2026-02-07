@@ -1,8 +1,10 @@
-# Telegram 群管理机器人（Cloudflare Workers）
+[中文](README.md) | [English](README_EN.md)
+
+# Telegram 群管理机器人
 
 一个基于Cloudflare Worker的自用Telegram群垃圾消息删除机器人。
 
-欢迎fork，但请记得保留[作者信息](#其他)
+欢迎fork，但请记得保留[其他](#其他)
 ## 功能
 
 - 链接删除
@@ -51,13 +53,13 @@
 ![img_5.png](assets%2Fimages%2Fimg_5.png)
 
 6.修改机器人Token
-```
+```javascript
 const BOT_TOKEN = 'xxxxxxx';
 ```
 将xxxxxxx改成你自己的机器人token
 
 7.修改白名单列表，也就是不会被机器人检测消息的用户id
-```
+```javascript
 const WHITE_LIST_ID = new Set([
 	123456,
 	78945612
@@ -78,7 +80,9 @@ https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<WORKER_URL>/webh
 ![img_6.png](assets%2Fimages%2Fimg_6.png)
 
 设置成功后你会看到这样的提示：
+```json
 {"ok":true,"result":true,"description":"Webhook is set"}
+```
 
 ## 其他
 
